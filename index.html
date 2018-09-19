@@ -19,9 +19,11 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://cdn.pubnub.com/pubnub-3.7.13.min.js"></script>
 <script>
+    Notification.requestPermission().then(function(permission) {
     var e = new Notification("Maverick Update", {
         body: 'Ride time is now below 5 minutes!',
         icon: 'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/cp-en-us/icons/cp-maverick-ridesicon.png'
+    })
     })
 </script>
 
